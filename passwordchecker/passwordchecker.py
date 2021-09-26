@@ -18,10 +18,6 @@ class PasswordChecker:
 
         return result_generator()
 
-    @classmethod
-    def make_result(cls, password, count, error_no):
-        return f"{password},{count},{error_no}"
-
     def make_dict_result(self, item):
         li = item.split(",")
         return {
